@@ -4,5 +4,5 @@ Obtenez une expression aléatoire sur expressio.fr
 
 ```js
 const expressio = require('expressio.fr');
-expressio.random();
+const { expression, definition } = await expressio.random();
 ```

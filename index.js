@@ -15,8 +15,8 @@ module.exports.random = async () => {
     const dom = new jsdom.JSDOM(text);
 
     return {
-        content: dom.window.document.querySelector('#search-expressions').value,
-        def: dom.window.document.querySelectorAll('.subtitle')[1].textContent
+        expression: dom.window.document.querySelector('#search-expressions').value,
+        definition: dom.window.document.querySelectorAll('.subtitle')[1].textContent
     }
 
 };
