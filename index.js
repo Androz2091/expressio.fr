@@ -1,7 +1,6 @@
 const randomUseragent = require('random-useragent');
 const fetch = require('node-fetch');
 const jsdom = require('jsdom');
-const { writeFileSync } = require('fs');
 
 module.exports.random = async () => {
 
